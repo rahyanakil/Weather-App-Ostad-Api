@@ -1,13 +1,28 @@
-.weather-bg{
-    background-image: url(../img/weather-app-bg-img.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.weather-bg {
+    background: url("../img/weather-app-bg-img.jpg") no-repeat center center/cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-input.form-control{
-    height:50px
+
+.weather-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-input.btn.btn-danger{
-    width:130px;
+
+h4, h5 {
+    margin: 10px 0;
+}
+
+#empty-input {
+    color: red;
+    margin-top: 10px;
 }
